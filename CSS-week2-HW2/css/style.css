@@ -1,4 +1,4 @@
-/* --- YÊU CẦU 1-2: Cấu hình cơ bản & Skip to Main Content --- */
+/* --- YÊU CẦU 1-2: Cấu hình cơ bản & Skip Link --- */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 150%;
@@ -33,32 +33,46 @@ header {
   color: #ffffff;
 }
 
-/* --- YÊU CẦU 3: Comment out styling cũ của thẻ li --- */
-/* 
+/* Bỏ dấu chấm tròn bullet points của menu */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* --- YÊU CẦU 3: Comment out styling cũ của li --- */
+/*
 li {
   display: inline-block;
   width: 150px;
 }
 */
 
-/* --- YÊU CẦU 4: Thẻ nav dùng inline-block và width ~ 80% --- */
+nav li {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+/* --- YÊU CẦU 4: Nav inline-block và width ~ 80% --- */
 nav {
   background-color: #2b6cb0;
   padding: 10px;
   display: inline-block;
   width: 80%;
+  vertical-align: middle;
 }
 
 nav a {
   color: #ffffff;
   text-decoration: none;
   font-weight: bold;
-  margin-right: 15px;
 }
 
-/* --- YÊU CẦU 5: Descendent selector chỉnh ảnh trong nav có width ~ 10% --- */
-nav img {
+/* --- YÊU CẦU 5: Descendent selector chỉnh ảnh trong header/nav width ~ 10% --- */
+header img {
   width: 10%;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 main {
@@ -67,7 +81,7 @@ main {
   padding: 20px;
 }
 
-/* --- YÊU CẦU 6 & 8: Class .grid dùng CSS Grid 2 cột (~40% mỗi cột) --- */
+/* --- YÊU CẦU 6 & 8: Grid 2 cột (~40% mỗi cột) --- */
 .grid {
   display: grid;
   grid-template-columns: 40% 40%;
@@ -76,17 +90,21 @@ main {
   row-gap: 20px;
 }
 
-/* --- YÊU CẦU 7: Descendent selector chỉ chỉnh ảnh trong .grid có width 100% --- */
+/* --- YÊU CẦU 7: Descendent selector chỉnh ảnh trong .grid rộng 100% --- */
 .grid img {
   width: 100%;
 }
 
-/* --- YÊU CẦU 9: Class .flex dùng Flexbox với flex-wrap và justify-content --- */
+/* --- YÊU CẦU 9: Flexbox container --- */
 .flex {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
+}
+
+.flex img {
+  margin: 10px;
 }
 
 footer {
@@ -108,31 +126,4 @@ h1 {
 
 p {
   line-height: 1.6;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-/* Yêu cầu 4: Nav dùng inline-block và width ~ 80% */
-nav {
-  background-color: #2b6cb0;
-  padding: 10px;
-  display: inline-block;
-  width: 80%;
-  vertical-align: middle;
-}
-
-nav li {
-  display: inline-block;
-  margin-right: 15px;
-}
-
-/* Yêu cầu 5: Descendent selector chỉnh ảnh trong header/nav width ~ 10% */
-header img {
-  width: 10%;
-  display: inline-block;
-  vertical-align: middle;
 }
