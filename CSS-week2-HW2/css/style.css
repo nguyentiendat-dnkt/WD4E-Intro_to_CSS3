@@ -70,7 +70,7 @@ nav a {
 
 /* YÊU CẦU 5: Descendent selector chỉnh ảnh trong header/nav width ~ 10% */
 header img {
-  width: 10%;
+  width: 10% !important;
   display: inline-block;
   vertical-align: middle;
 }
