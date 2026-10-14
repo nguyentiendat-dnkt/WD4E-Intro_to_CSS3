@@ -69,10 +69,14 @@ nav a {
 }
 
 /* YÊU CẦU 5: Descendent selector chỉnh ảnh trong header/nav width ~ 10% */
-header img {
+header img,
+nav img,
+header > img {
   width: 10% !important;
+  max-width: 10% !important;
   display: inline-block;
   vertical-align: middle;
+  height: auto;
 }
 
 main {
