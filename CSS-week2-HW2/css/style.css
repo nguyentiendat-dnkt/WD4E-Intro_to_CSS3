@@ -33,14 +33,14 @@ header {
   color: #ffffff;
 }
 
-/* Bỏ dấu chấm tròn bullet points của menu */
+/* Bỏ dấu chấm tròn (bullet points) của danh sách menu */
 ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
-/* --- YÊU CẦU 3: Comment out styling cũ của li --- */
+/* YÊU CẦU 3: Comment out styling cũ của li và xếp li nằm ngang */
 /*
 li {
   display: inline-block;
@@ -53,7 +53,7 @@ nav li {
   margin-right: 15px;
 }
 
-/* --- YÊU CẦU 4: Nav inline-block và width ~ 80% --- */
+/* YÊU CẦU 4: Nav dạng inline-block và width ~ 80% */
 nav {
   background-color: #2b6cb0;
   padding: 10px;
@@ -68,7 +68,7 @@ nav a {
   font-weight: bold;
 }
 
-/* --- YÊU CẦU 5: Descendent selector chỉnh ảnh trong header/nav width ~ 10% --- */
+/* YÊU CẦU 5: Descendent selector chỉnh ảnh trong header/nav width ~ 10% */
 header img {
   width: 10%;
   display: inline-block;
@@ -81,7 +81,7 @@ main {
   padding: 20px;
 }
 
-/* --- YÊU CẦU 6 & 8: Grid 2 cột (~40% mỗi cột) --- */
+/* YÊU CẦU 6 & 8: Grid 2 cột (~40% mỗi cột) */
 .grid {
   display: grid;
   grid-template-columns: 40% 40%;
@@ -90,12 +90,12 @@ main {
   row-gap: 20px;
 }
 
-/* --- YÊU CẦU 7: Descendent selector chỉnh ảnh trong .grid rộng 100% --- */
+/* YÊU CẦU 7: Descendent selector chỉ chỉnh ảnh trong .grid rộng 100% */
 .grid img {
   width: 100%;
 }
 
-/* --- YÊU CẦU 9: Flexbox container --- */
+/* YÊU CẦU 9: Flexbox container */
 .flex {
   display: flex;
   flex-wrap: wrap;
